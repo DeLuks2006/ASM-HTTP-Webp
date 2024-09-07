@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTTP Assembly</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="math">
+  <!-- 
+  LANDING PAGE FOR ASM
+  - hero page
+  -->
+  <header class="bg-transparent sticky backdrop-blur-sm">
+    <nav class="mx-auto flex items-center justify-between pt-4 pb-4 px-16">
+      <a href="#" class="flex items-center text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+        </svg>
+        <p class="text-lg font-bold ml-2">HTTP Assembly</p>
+      </a>
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="text-gray-300 hover:text-white">Home</a>
+        <a href="#" class="text-gray-300 hover:text-white">About</a>
+        <a href="#" class="text-gray-300 hover:text-white">Services</a>
+        <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-gray-300 hover:text-white focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="#" class="block text-gray-300 hover:text-white px-4 py-2">Home</a>
+      <a href="#" class="block text-gray-300 hover:text-white px-4 py-2">About</a>
+      <a href="#" class="block text-gray-300 hover:text-white px-4 py-2">Services</a>
+      <a href="#" class="block text-gray-300 hover:text-white px-4 py-2">Contact</a>
+    </div>
+  </header>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+
+  <div class="test123 flex flex-col justify-start items-center flex-grow pt-10 pb-10">
+    <div>
+      <h1 class="text-5xl font-bold">HTTP Assembly</h1>
+      <sub class="text-neutral-500">I like big backends and I cannot lie & all you brothas can't deny</sub>
+    </div>
+    <p class="pt-4">Introducing: Yet another simple HTTP server written with the help of the netwide assembler!</p>
+  </div>
+  <div class="grid auto-rows-[192px] grid-cols-3 gap-4 p-3 max-w-5xl mx-auto">
+    <div id=1 class="row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900">
+       <p class="text-2xl font-semibold">Lines of Code written: 42.000</p> 
+    </div>
+    <div id=2 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900">
+    </div>
+    <div id=3 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900">
+        <p class="text-2xl font-semibold">Total time spent in debugger: Yes...</p>
+    </div>
+    <div id=4 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900 col-span-2">
+    </div>
+    <div id=5 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900">
+        <p class="text-2xl font-semibold">Times cried out of frustration: 9786</p>
+    </div>
+    <div id=6 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900">
+        <p class="text-2xl font-semibold">Total developer tears counted: 18.462</p>
+    </div>
+    <div id=7 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900 col-span-2">
+    </div>
+  </div>
+</body>
+
+</html>
