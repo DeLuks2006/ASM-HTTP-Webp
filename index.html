@@ -14,7 +14,7 @@
 </head>
 
 <body class="math">
-  <header class="bg-transparent sticky backdrop-blur-sm">
+  <header class="bg-transparent fixed backdrop-blur-sm w-full">
     <nav class="mx-auto flex items-center justify-between pt-4 pb-4 px-16">
       <a href="#" class="flex items-center text-white">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -54,42 +54,48 @@
       mobileMenu.classList.toggle('hidden');
     });
   </script>
-
-  <div class="test123 flex flex-col justify-center items-center flex-grow pb-10">
+  <!-- HERO SECTION -->
+  <div class="test123 flex flex-col justify-center items-center flex-grow pb-10 h-screen">
     <h1 class="text-5xl font-bold pb-2">ParsELF</h1>
     <sub class="text-neutral-500">I like big backends and I cannot lie & all you brothas can't deny</sub>
-    <p class="pt-4">Introducing: Yet another simple ELF parser written with the help of the netwide assembler!</p>
+    <p class="pt-4 justify-center">Introducing: Yet another simple ELF parser written with the help of the netwide
+      assembler!</p>
   </div>
-  <div class="grid auto-rows-[192px] grid-cols-3 gap-4 p-3 max-w-5xl mx-auto">
-    <div id=1 class="row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900">
-      <p class="text-2xl font-semibold">Lines of Code written: 182</p>
-    </div>
-    <div id=2 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900">
-    </div>
-    <div id=3 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900">
-      <p class="text-2xl font-semibold">Total time spent in debugger: 2 Days</p>
-    </div>
-    <div id=4 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900 col-span-2 flex flex-row">
-      <div id="txt" class="flex flex-col flex-1">
-        <h2 class="text-xl font-semibold pb-2">Humble Beginnings</h2>
-        <p>
-          Each new project starts with a humble beginning, in the picture displayed you can see my attempt at reading
-          the ELF header into a struct and printing the magic bytes.
-        </p>
+  <!-- BENTO GRID CONTENT -->
+  <div class="flex pb-32 justify-center items-center">
+    <div class="grid auto-rows-[192px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-3 max-w-5xl mx-auto flex flex-col">
+      <div id=1 class="row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900">
+        <p class="text-2xl font-semibold">Lines of Code written: 182</p>
       </div>
-      <div id="image" class="flex flex-1 justify-end">
-        <img src="./images/magic.png" alt="img" class="w-64 h-auto rounded border border-slate-400/10"
-          onclick="this.requestFullscreen()">
+      <div id=2 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900">
       </div>
-    </div>
-    <div id=5 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900">
-      <p class="text-2xl font-semibold">Times cried out of frustration: 0</p>
-    </div>
-    <div id=6 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900">
-      <p class="text-2xl font-semibold">Total developer tears counted: 0</p>
-    </div>
-    <div id=7 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900 col-span-2">
+      <div id=3 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900">
+        <p class="text-2xl font-semibold">Total time spent in debugger: 2 Days</p>
+      </div>
+      <div id=4 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900 col-span-2 flex flex-row">
+        <div id="txt" class="flex flex-col flex-1">
+          <h2 class="text-xl font-semibold pb-2">Humble Beginnings</h2>
+          <p>
+            Each new project starts with a humble beginning, in the picture displayed you can see my attempt at reading
+            the ELF header into a struct and printing the magic bytes.
+          </p>
+        </div>
+        <div id="image" class="flex flex-1 justify-end">
+          <img src="./images/magic.png" alt="img" class="w-64 h-auto rounded border border-slate-400/10"
+            onclick="this.requestFullscreen()">
+        </div>
+      </div>
+      <div id=5 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900">
+        <p class="text-2xl font-semibold">Times cried out of frustration: 0</p>
+      </div>
+      <div id=6 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900">
+        <p class="text-2xl font-semibold">Total developer tears counted: 0</p>
+      </div>
+      <div id=7 class="row-span-1 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900 col-span-2">
+      </div>
     </div>
   </div>
+
 </body>
+
 </html>
